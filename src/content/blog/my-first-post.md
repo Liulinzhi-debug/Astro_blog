@@ -2,7 +2,7 @@
 title: '我的第一篇 Astro 博客'
 description: '这是我用 VS Code 写的测试文章，非常简单！'
 pubDate: '2026-01-04'
-heroImage: '/blog-placeholder-1.jpg'
+heroImage: '../../assets/blog-placeholder-1.jpg'
 ---
 
 ## 大家好！
