@@ -1,6 +1,6 @@
 ---
-title: '论文速读：Context-Aware Initialization'
-description: '基于 Fast-dLLM 的热启动尝试：让扩散模型赢在起跑线？'
+title: 'Context-Aware Initialization'
+description: '两个先验策略'
 pubDate: 2026-01-05
 heroImage: 'https://github.com/Liulinzhi-debug/picx-images-hosting/raw/master/0b6caba9e4a102544343dbac032c2823.465ywn7kh.webp'
 ---
