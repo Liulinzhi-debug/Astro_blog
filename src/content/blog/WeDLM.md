@@ -9,7 +9,7 @@ heroImage: 'https://github.com/Liulinzhi-debug/picx-images-hosting/raw/master/e3
 
 腾讯微信 AI 提出的 **WeDLM** 用一个巧妙的策略解决了这个问题：**拓扑重排序 (Topological Reordering)**。
 
-## 核心创新
+### 核心创新
 
 1.  **物理移位**：将所有“已确定”的 token 搬到序列的最前面。
 2.  **逻辑保留**：通过 RoPE 位置编码保留它们原本的语义位置。
@@ -17,9 +17,9 @@ heroImage: 'https://github.com/Liulinzhi-debug/picx-images-hosting/raw/master/e3
 
 ![WeDLM 拓扑重排序示意图](https://github.com/Liulinzhi-debug/picx-images-hosting/raw/master/e3be3970794fa545a89a4f8b57202688.5q7wcol4kf.webp)
 
-## 深入机制 Q&A
 
-### 1. 解码后的 Token 还会变吗？
+
+#### 1. 解码后的 Token 还会变吗？
 **已提交（Committed）的 Token 不会变，未提交的会变。**
 
 WeDLM 采用“流式并行解码”。它维护一个滑动窗口：
@@ -30,7 +30,7 @@ WeDLM 采用“流式并行解码”。它维护一个滑动窗口：
 
 ![WeDLM 流式并行解码 vs 块解码](https://github.com/Liulinzhi-debug/picx-images-hosting/raw/master/fa2f9734c91056139d243ff0867e7ad7.9rjvr3374h.webp)
 
-### 2. KV Cache 前面的内容什么时候更新？
+#### 2. KV Cache 前面的内容什么时候更新？
 **KV Cache 永远是“追加（Append-only）”的，不需要回退更新。**
 
 * 由于强制使用了**因果掩码**，每一个被提交的 token，其 KV 值只依赖于它物理位置之前的 token。
