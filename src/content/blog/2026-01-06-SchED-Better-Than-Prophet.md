@@ -27,3 +27,5 @@ SchED 计算的是**Answer Span**的平均置信度评估整体生成的稳定�
 
 ![SchED Algorithm](https://github.com/Liulinzhi-debug/picx-images-hosting/raw/master/0e1349748a4796ffc6a7d38d8354dd50.1ovwzarw5l.webp)
 
+---
+[📄 阅读原文 (arXiv:2512.22737)](https://arxiv.org/abs/2512.02892)
