@@ -13,7 +13,8 @@ heroImage: 'https://github.com/Liulinzhi-debug/picx-images-hosting/raw/master/d4
 
 用 **余弦相似** 和 **KL散度** 作为判断稳定性标准
 
-设定一个稳定性阈值 $\delta$。当 KL 散度 $D_t < \delta$ 时，认为这一步是稳定的( 算法要求**连续 $\Omega$ 步**都低于阈值 ),然后 **终止后续的所有去噪步骤**，提前输出结果
+设定一个稳定性阈值 $\delta$
+当 KL 散度  $D_t < \delta$  时，认为这一步是稳定的( 算法要求连续 $\Omega$ 步都低于阈值 ),然后 **终止后续的所有去噪步骤**，提前输出结果
 
 ---
 
