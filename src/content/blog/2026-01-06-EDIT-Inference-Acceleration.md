@@ -8,7 +8,7 @@ heroImage: 'https://github.com/Liulinzhi-debug/picx-images-hosting/raw/master/d4
 
 
 在 SFT 过程中，算法追踪 AdamW 优化器的更新量, 关注更新**幅度大且方向稳定**的参数
-将一段时间内平均更新矩阵 $\bar{U}_B$ 通过**Row-wise Energy** 压缩成特征对齐向量 $u$。
+将一段时间内平均更新矩阵 $U_B$ 通过**Row-wise Energy** 压缩成特征对齐向量 $u$。
 
 
 用 **余弦相似** 和 **KL散度** 作为判断稳定性标准
