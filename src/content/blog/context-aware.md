@@ -17,7 +17,7 @@ heroImage: 'https://github.com/Liulinzhi-debug/picx-images-hosting/raw/master/0b
 2.  **嵌入插值**：
     在**嵌入层 (Embedding Layer)** 进行操作，将 `[MASK]` 的向量和小模型生成词的向量按比例混合。公式如下：
 
-    $$\tilde{e} = (1-\alpha) \cdot e_{\text{MASK}} + \alpha \cdot e_{\text{SmallModel}}$$
+    $$e = (1-\alpha) \cdot e_{MASK} + \alpha \cdot e_{SmallModel}$$
 
 #### 纠错机制
 
