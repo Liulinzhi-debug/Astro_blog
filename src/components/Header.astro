@@ -31,9 +31,14 @@ import HeaderLink from './HeaderLink.astro';
 		text-decoration: none;
 	}
 	nav {
-		display: flex;
-		align-items: center;
-		justify-content: center;
+    display: grid; 
+    grid-template-columns: 1fr auto 1fr; /* 关键：左边1份，中间自动，右边1份 */
+    align-items: center;
+	}
+
+	.internal-links {
+		justify-self: center; /* 强制这一块在中间的格子居中 */
+		display: flex;        /* 让 Home Blog About 横向排列 */
 	}
 	nav a {
 		padding: 1em 0.5em;
