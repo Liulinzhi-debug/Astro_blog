@@ -13,5 +13,12 @@ export default defineConfig({
 		remarkPlugins: [remarkMath], // 启用 Math
 		rehypePlugins: [rehypeKatex], // 启用 KaTeX
 	},
-	integrations: [mdx(), sitemap()],
+	integrations: [
+    // 2. 针对 .mdx 文件，必须在这里再加一遍！
+    mdx({
+        remarkPlugins: [remarkMath],
+        rehypePlugins: [rehypeKatex],
+    }), 
+    sitemap()
+  ],
 });
