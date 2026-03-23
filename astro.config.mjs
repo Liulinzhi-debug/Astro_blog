@@ -21,4 +21,8 @@ export default defineConfig({
     }), 
     sitemap()
   ],
+  image: {
+    // 允许来自 github 的图片
+    domains: ["github.com", "raw.githubusercontent.com"], 
+  },
 });
